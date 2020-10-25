@@ -1,0 +1,31 @@
+/*General*/
+
+.flex-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-spAround{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.align-text{
+    text-align: center;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.width-50{
+    width: 50%;
+}
+
+
+/*Login page*/
+

@@ -18,17 +18,28 @@ class LoginController extends AbstractController
     {
         return $this->render('login/login.html.twig');
     }
+
     /*
-     * connection with account
-     * submit connection form
-     * get requet with user data to check
-     * send user id into session
+     * go to the connexion page
+     * sign in or login in
      */
     /**
      * @Route("/connection", name="connection")
      */
     public function connection(){
 
-        return $this->render('userPageConnected.html.twig');
+        return $this->render('registration/register.html.twig');
     }
+
+    /*
+     * go to the page "About us"
+     * */
+    /**
+     * @Route("/about", name="aboutUs")
+     */
+    public function about(){
+
+        return $this->render('login/aboutUs.html.twig');
+    }
+
 }

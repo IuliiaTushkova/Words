@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Form\AccountCreationType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -18,7 +19,12 @@ class AccountCreationController extends AbstractController
     public function accountCreation()
     {
         //@todo create a form
-        return $this->render('account_creation/accountCreation.html.twig');
+        $accountCreationForm = $this->createForm(AccountCreationType::class);
+
+
+        return $this->render('account_creation/accountCreation.html.twig', [
+            'accountCreationForm' => $accountCreationForm->createView(),
+        ]);
     }
 
     /*

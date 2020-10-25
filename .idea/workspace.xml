@@ -154,13 +154,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projetSortir" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Words\templates" />
       <recent name="C:\wamp64\www\words\templates\account_creation" />
       <recent name="C:\wamp64\www\words\templates\login" />
     </key>
@@ -181,7 +182,7 @@
       <workItem from="1603653879417" duration="91000" />
       <workItem from="1603653987583" duration="123000" />
       <workItem from="1603654125276" duration="324000" />
-      <workItem from="1603654464764" duration="420000" />
+      <workItem from="1603654464764" duration="4786000" />
     </task>
     <servers />
   </component>
@@ -223,10 +224,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="631" y="318" key="EditFileWatcherDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601497068181" />
-    <state x="744" y="286" key="FileChooserDialogImpl" timestamp="1601670058938">
+    <state x="744" y="286" key="FileChooserDialogImpl" timestamp="1603656359151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="744" y="286" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601670058937" />
+    <state x="744" y="286" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603656359151" />
     <state x="463" y="185" key="SettingsEditor" timestamp="1603654106402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
