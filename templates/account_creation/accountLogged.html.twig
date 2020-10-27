@@ -1,0 +1,17 @@
+{% extends 'layoutAccount.html.twig' %}
+{% block title %}Welcome{% endblock %}
+
+{% block header %}
+    <h1>Hello {{ app.user.pseudo }}</h1>
+    {% for label, messages in app.flashes(['success', 'warning']) %}
+        {% for message in messages %}
+            <div class="flash-{{ label }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+{% endblock %}
+
+{% block main %}
+    <h1>Vous etes connectés!</h1>
+{% endblock %}

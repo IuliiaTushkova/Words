@@ -1,11 +1,20 @@
-{% extends '../layoutAccount.html.twig' %}
+{% extends 'layoutAccount.html.twig' %}
 
-{% block title %}Creat Account{% endblock %}
+{% block title %}Create Account{% endblock %}
 
 {% block header %}
-    <h1>Creat account</h1>
+    <h1>Créer un compte</h1>
 {% endblock %}
 
 {% block main %}
-
+    <section class="width-50 flex-center">
+        {{ form_start(accountCreationForm) }}
+            {{ form_row(accountCreationForm.pseudo) }}
+            {{ form_row(accountCreationForm.email) }}
+            {{ form_row(accountCreationForm.password) }}
+            {{ form_row(accountCreationForm.motherTongue) }}
+            {{ form_row(accountCreationForm.targetLangue) }}
+            {{ form_row(accountCreationForm.submit) }}
+        {{ form_end(accountCreationForm) }}
+    </section>
 {% endblock %}

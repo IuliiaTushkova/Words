@@ -154,7 +154,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projetSortir" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -182,7 +182,7 @@
       <workItem from="1603653879417" duration="91000" />
       <workItem from="1603653987583" duration="123000" />
       <workItem from="1603654125276" duration="324000" />
-      <workItem from="1603654464764" duration="4786000" />
+      <workItem from="1603654464764" duration="12708000" />
     </task>
     <servers />
   </component>
@@ -211,23 +211,23 @@
     </state>
     <state x="-1167" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601671636699" />
     <state x="753" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601674816585" />
-    <state x="693" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601669751150">
+    <state x="693" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603748239450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="693" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601669751150" />
-    <state x="-1230" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601671653120">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="693" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603748239450" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603742040629">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601671653120" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601670480586" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603742040629" />
     <state x="631" y="318" key="EditFileWatcherDialog" timestamp="1601497068181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="631" y="318" key="EditFileWatcherDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601497068181" />
-    <state x="744" y="286" key="FileChooserDialogImpl" timestamp="1603656359151">
+    <state x="744" y="286" key="FileChooserDialogImpl" timestamp="1603803375337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="744" y="286" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603656359151" />
+    <state x="744" y="286" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603803375337" />
     <state x="463" y="185" key="SettingsEditor" timestamp="1603654106402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -50,14 +50,14 @@ class User implements UserInterface
     private $motherTongue;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Langue::class, inversedBy="studyUsers")
-     */
-    private $targetLangue;
-
-    /**
      * @ORM\OneToMany(targetEntity=Traduction::class, mappedBy="user")
      */
     private $traductions;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Learners::class, mappedBy="user", cascade={"persist", "remove"})
+     */
+    private $learner;
 
     public function __construct()
     {
@@ -168,32 +168,6 @@ class User implements UserInterface
     }
 
     /**
-     * @return Collection|Langue[]
-     */
-    public function getTargetLangue(): Collection
-    {
-        return $this->targetLangue;
-    }
-
-    public function addTargetLangue(Langue $targetLangue): self
-    {
-        if (!$this->targetLangue->contains($targetLangue)) {
-            $this->targetLangue[] = $targetLangue;
-        }
-
-        return $this;
-    }
-
-    public function removeTargetLangue(Langue $targetLangue): self
-    {
-        if ($this->targetLangue->contains($targetLangue)) {
-            $this->targetLangue->removeElement($targetLangue);
-        }
-
-        return $this;
-    }
-
-    /**
      * @return Collection|Traduction[]
      */
     public function getTraductions(): Collection
@@ -219,6 +193,23 @@ class User implements UserInterface
             if ($traduction->getUser() === $this) {
                 $traduction->setUser(null);
             }
+        }
+
+        return $this;
+    }
+
+    public function getLearner(): ?Learner
+    {
+        return $this->learner;
+    }
+
+    public function setLearner(Learner $learner): self
+    {
+        $this->learner = $learner;
+
+        // set the owning side of the relation if necessary
+        if ($learner->getUser() !== $this) {
+            $learner->setUser($this);
         }
 
         return $this;

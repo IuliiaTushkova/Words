@@ -29,10 +29,6 @@ class Langue
      */
     private $nativeUsers;
 
-    /**
-     * @ORM\ManyToMany(targetEntity=User::class, mappedBy="targetLangue")
-     */
-    private $studyUsers;
 
     /**
      * @ORM\OneToMany(targetEntity=Word::class, mappedBy="langue")
@@ -44,6 +40,7 @@ class Langue
         $this->nativeUsers = new ArrayCollection();
         $this->studyUsers = new ArrayCollection();
         $this->words = new ArrayCollection();
+        $this->learner = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -94,33 +91,6 @@ class Langue
         return $this;
     }
 
-    /**
-     * @return Collection|User[]
-     */
-    public function getStudyUsers(): Collection
-    {
-        return $this->studyUsers;
-    }
-
-    public function addStudyUser(User $studyUser): self
-    {
-        if (!$this->studyUsers->contains($studyUser)) {
-            $this->studyUsers[] = $studyUser;
-            $studyUser->addTargetLangue($this);
-        }
-
-        return $this;
-    }
-
-    public function removeStudyUser(User $studyUser): self
-    {
-        if ($this->studyUsers->contains($studyUser)) {
-            $this->studyUsers->removeElement($studyUser);
-            $studyUser->removeTargetLangue($this);
-        }
-
-        return $this;
-    }
 
     /**
      * @return Collection|Word[]
@@ -152,4 +122,6 @@ class Langue
 
         return $this;
     }
+
+
 }
