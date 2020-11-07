@@ -95,8 +95,8 @@ class AppAuthAuthenticator extends AbstractFormLoginAuthenticator implements Pas
         if ($targetPath = $this->getTargetPath($request->getSession(), $providerKey)) {
             return new RedirectResponse($targetPath);
         }
-        //@todo: create root home and root landing - version disconnect
-        return new RedirectResponse($this->urlGenerator->generate('home'));
+
+        return new RedirectResponse($this->urlGenerator->generate('connected_landing'));
 
     }
 

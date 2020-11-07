@@ -1,0 +1,13 @@
+{% extends 'general_template.html.twig' %}
+{% block title %} Words | Ajouter un mot{% endblock %}
+{% block headerLanding %} {% endblock %}
+
+{% block main %}
+    {{ form_start(traductionForm) }}
+    {{ form_widget(traductionForm.wordToTranslate) }}
+    {{ form_widget(traductionForm.wordTranslation) }}
+    {{ form_label(traductionForm.categorie) }}
+    {{ form_row(traductionForm.categorie) }}
+    {{ form_end(traductionForm) }}
+
+{% endblock %}

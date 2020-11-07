@@ -154,16 +154,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bucket-List" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Words\templates" />
-      <recent name="C:\wamp64\www\words\templates\account_creation" />
-      <recent name="C:\wamp64\www\words\templates\login" />
+      <recent name="C:\wamp64\www\Words\templates\logged_user" />
+      <recent name="C:\wamp64\www\Words\src\Controller" />
+      <recent name="C:\wamp64\www\Words\src\Controller\UserConnected" />
+      <recent name="C:\wamp64\www\Words\public\css" />
+      <recent name="C:\wamp64\www\Words\public\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -183,6 +185,9 @@
       <workItem from="1603653987583" duration="123000" />
       <workItem from="1603654125276" duration="324000" />
       <workItem from="1603654464764" duration="12708000" />
+      <workItem from="1603913873496" duration="2898000" />
+      <workItem from="1604046685171" duration="7157000" />
+      <workItem from="1604164712652" duration="35863000" />
     </task>
     <servers />
   </component>
@@ -215,22 +220,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603748239450" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603742040629">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604761461599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601671653120" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603742040629" />
-    <state x="631" y="318" key="EditFileWatcherDialog" timestamp="1601497068181">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604761461599" />
+    <state x="631" y="318" width="662" height="479" key="EditFileWatcherDialog" timestamp="1604175133198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="318" key="EditFileWatcherDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601497068181" />
-    <state x="744" y="286" key="FileChooserDialogImpl" timestamp="1603803375337">
+    <state x="631" y="318" width="662" height="479" key="EditFileWatcherDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604175133198" />
+    <state x="744" y="286" key="FileChooserDialogImpl" timestamp="1604435314615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="744" y="286" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603803375337" />
-    <state x="463" y="185" key="SettingsEditor" timestamp="1603654106402">
+    <state x="744" y="286" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604435314615" />
+    <state x="463" y="185" key="SettingsEditor" timestamp="1604175135595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="185" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603654106402" />
+    <state x="463" y="185" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604175135595" />
   </component>
 </project>

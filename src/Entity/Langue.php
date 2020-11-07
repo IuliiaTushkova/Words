@@ -35,6 +35,11 @@ class Langue
      */
     private $words;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Learner::class, inversedBy="langToLearn")
+     */
+    private $learner;
+
     public function __construct()
     {
         $this->nativeUsers = new ArrayCollection();
@@ -119,6 +124,18 @@ class Langue
                 $word->setLangue(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getLearner(): ?Learner
+    {
+        return $this->learner;
+    }
+
+    public function setLearner(?Learner $learner): self
+    {
+        $this->learner = $learner;
 
         return $this;
     }

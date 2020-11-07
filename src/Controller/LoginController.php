@@ -12,34 +12,28 @@ class LoginController extends AbstractController
      */
 
     /**
-     * @Route("/", name="login")
+     * @Route("/", name="login_LP")
      */
     public function login()
     {
-        return $this->render('login/login.html.twig');
+        return $this->render('login_LP/landingPage.html.twig',[
+            'view'=>'viewLP'
+        ]);
     }
 
     /*
-     * go to the connexion page
-     * sign in or login in
-     */
-    /**
-     * @Route("/connection", name="connection")
-     */
-    public function connection(){
-
-        return $this->render('registration/register.html.twig');
-    }
-
-    /*
-     * go to the page "About us"
+     * go to the page "Découvrir le projet"
      * */
     /**
-     * @Route("/about", name="aboutUs")
+     * @Route("/about", name="descover_project")
      */
     public function about(){
 
-        return $this->render('login/aboutUs.html.twig');
+        return $this->render('login_LP/decouvrirLeProjet.html.twig',
+        [
+            'view' => 'aboutVieuw'
+        ]);
     }
+
 
 }

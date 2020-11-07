@@ -1,28 +1,24 @@
-{% extends 'layoutAccount.html.twig' %}
+{% extends 'general_template.html.twig' %}
 
-{% block title %}Login{% endblock %}
+{% block title %}{% trans %}Words | Créer un compte{% endtrans %}{% endblock %}
 
-{% block header %}
-    <h1>Login</h1>
-{% endblock %}
+{% block headerLanding %} {% endblock %}
 {% block main %}
-    <section class="width-50">
-        {% for flashError in app.flashes('verify_email_error') %}
-            <div class="alert alert-danger" role="alert">{{ flashError }}</div>
-        {% endfor %}
+    <section class="width-30">
+        <article class="width-100 flex-center">
+            <h2>{% trans %}Ravie de te rencontrer !{% endtrans %}</h2>
+        </article>
         {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        <button type="submit" class="btn btn-primary">Register</button>
+            {{ form_row(registrationForm.pseudo) }}
+            {{ form_row(registrationForm.email) }}
+            {{ form_row(registrationForm.motherTongue) }}
+            {{ form_row(registrationForm.learner) }}
+            {{ form_row(registrationForm.plainPassword, {
+                label: 'Mot de passe'
+            }) }}
+            <article class="flex-center width-100">
+                <button type="submit" class=" btn-gen margin-all-20px">Go</button>
+            </article>
         {{ form_end(registrationForm) }}
-        <p>
-            <a href="{{ path('account_creation') }}">Créer un compte</a>
-        </p>
-        <p>
-            <a href="#">Mot de passe oublié?</a>
-        </p>
-
     </section>
 {% endblock %}

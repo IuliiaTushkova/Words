@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Words:l'application qui vous permettra d'apprendre plus vite les nouveaux mots des langues étrangères">
+    <meta property="og:title" content="Words" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="#" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Local css -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>{% block title%}{% trans %}Words | Révise tes mots{% endtrans %}{% endblock %}</title>
+</head>
+{% block body %}
+    <body>
+    {######################## nav landing page ##########################################}
+    {% block headerLanding %}
+        <header class="width-100 align-text">
+            <nav class="width-100 flex-spAround navigation">
+                {% if view != 'aboutVieuw' %}
+                    <a href="{{ path('descover_project') }}" class="nav-item">{% trans %}Découvrir le projet{% endtrans %}</a>
+                {% endif %}
+                {# display if there's no connected users #}
+                {% if not app.user %}
+
+                    {# if these's not connexion page #}
+                    {% if view != "connexionView" %}
+                        <a href="{{ path('app_login') }}" class="nav-item">{% trans %}Se connecter{% endtrans %}</a>
+                    {% endif %}
+                    {% if view != 'accountCreationView' %}
+                        <a href="{{ path('account_creation') }}" class="nav-item">{% trans %}Créer un compte{% endtrans %}</a>
+                    {% endif %}
+                {% endif %}
+                {# display if there's a connected user #}
+                {% if app.user %}
+                    {% if view != "connectedLanding" %}
+                        <a href="{{ path('connectedLanding') }}" class="nav-item">{% trans %}Retour à l'accueil{% endtrans %}</a>
+                    {% endif %}
+                    <a href="{{ path('app_logout') }}" class="nav-item">{% trans %}Se déconnecter</a{% endtrans %}</a>
+                {% endif %}
+            </nav>
+            <section class="flex-center width-100 logo-wrapper flex-vertical-align-center">
+                <a href="{{ path('login_LP') }}"><h1 class="logo-style">Words.</h1></a>
+            </section>
+        </header>
+    {% endblock %}
+
+    {######################## nav and logo align #####################}
+    {% block headerLogoNav %}
+        <header class="width-100 align-text">
+            <nav class="width-100 flex-spAround navigation">
+                <div class="nav-item-logo-inline">
+                    <a href="{{ path('login_LP') }}"><h1 class="logo-style">Words.</h1></a>
+                </div>
+                {% if view != 'aboutVieuw' %}
+                    <div class="nav-item-logo-inline">
+                        <a href="{{ path('descover_project') }}" class="nav-item">{% trans %}Découvrir le projet{% endtrans %}</a>
+                    </div>
+                {% endif %}
+                {# display if there's no connected users #}
+                {% if not app.user %}
+                    {% if view != "connexionView" %}
+                        <div class="nav-item-logo-inline">
+                                <a href="{{ path('app_login') }}" class="nav-item">{% trans %}Se connecter{% endtrans %}</a>
+                        </div>
+                    {% endif %}
+                    {% if view != 'accountCreationView' %}
+                        <div class="nav-item-logo-inline">
+                            <a href="{{ path('app_register') }}" class="nav-item">{% trans %}Créer un compte{% endtrans %}</a>
+                        </div>
+                    {% endif %}
+                {% endif %}
+                {# display if there's a connected user #}
+                {% if app.user %}
+                    <div class="nav-item-logo-inline">
+                        {% if view != "connectedLanding" %}
+                            <a href="#" class="nav-item">{% trans %}Retour à l'accueil{% endtrans %}</a>
+                        {% endif %}
+                    </div>
+                    <div class="nav-item-logo-inline">
+                        <a href="{{ path('app_logout') }}" class="nav-item">{% trans %}Se déconnecter</a{% endtrans %}</a>
+                    </div>
+                {% endif %}
+            </nav>
+        </header>
+    {% endblock %}
+        <main class="width-100 flex-center flex-vertical-align-center">
+            {% block main %}
+                <section class="flex-center width-100 landing-text-wrapper">
+                    <div class="width-50 align-text width-50">
+                        {% if app.user %}
+                            <p>Hello, {{ app.user.pseudo | capitalize }}</p>
+                        {% endif %}
+                        {% trans %}
+                            <p class="text-general">Les langues étrangères, c'est toujours un tas de mots à apprendre! Difficile? Et si je vous dis que ça peut être fun?
+                            Créez vos listes, révisez  les mots avec nous, découvrez l’application “Words”!</p>
+                        {% endtrans %}
+                    </div>
+                </section>
+                <section class="landing-picture-wrapper width-100 flex-center">
+                    <img src="{{ asset('img/landing.svg') }}" alt="Staying home and working foreign language" class="landing-picture">
+                </section>
+            {% endblock %}
+        </main>
+        {% block footer %}
+        <footer class="flex-center align-text width-100">
+            {% trans %}<p>&copy;Iuliia Tushkova 2020</p>{% endtrans %}
+        </footer>
+        {% endblock %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        {% block JS %}{% endblock %}
+    </body>
+{% endblock %}
+</html>

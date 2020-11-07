@@ -37,6 +37,22 @@ class Word
      */
     private $langue;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $definition;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Gender::class, inversedBy="words")
+     */
+    private $gender;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=PartOfSpeech::class, inversedBy="words")
+     */
+    private $partOfSpeech;
+
+
     public function getId(): ?int
     {
         return $this->id;
@@ -91,6 +107,42 @@ class Word
     public function setLangue(?Langue $langue): self
     {
         $this->langue = $langue;
+
+        return $this;
+    }
+
+    public function getDefinition(): ?string
+    {
+        return $this->definition;
+    }
+
+    public function setDefinition(?string $definition): self
+    {
+        $this->definition = $definition;
+
+        return $this;
+    }
+
+    public function getGender(): ?Gender
+    {
+        return $this->gender;
+    }
+
+    public function setGender(?Gender $gender): self
+    {
+        $this->gender = $gender;
+
+        return $this;
+    }
+
+    public function getPartOfSpeech(): ?PartOfSpeech
+    {
+        return $this->partOfSpeech;
+    }
+
+    public function setPartOfSpeech(?PartOfSpeech $partOfSpeech): self
+    {
+        $this->partOfSpeech = $partOfSpeech;
 
         return $this;
     }

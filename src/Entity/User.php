@@ -55,7 +55,7 @@ class User implements UserInterface
     private $traductions;
 
     /**
-     * @ORM\OneToOne(targetEntity=Learners::class, mappedBy="user", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity=Learner::class, mappedBy="user", cascade={"persist", "remove"})
      */
     private $learner;
 

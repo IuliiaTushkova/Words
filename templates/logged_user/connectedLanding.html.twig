@@ -1,0 +1,19 @@
+{% extends 'general_template.html.twig' %}
+
+{% block headerLanding %}   {% endblock %}
+
+{% block main %}
+
+    <section class="width-100 flex-center">
+        <h2>Mes listes thématiques  : </h2>
+        <article>
+            <!-- afficher les categories -->
+        </article>
+    </section>
+    <section class="width-100 flex-center">
+        <p><a href="{{ path('add_word') }}">Ajouter un mot</a></p>
+        <p>------</p>
+        <p><a href="#">Aller réviser</a></p>
+    </section>
+
+{% endblock %}

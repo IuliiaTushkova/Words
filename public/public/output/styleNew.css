@@ -1,0 +1,46 @@
+/******************* Variables *********************/
+.navigation a {
+  color: #2F2E41;
+}
+
+/******************* Flex *********************/
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-spAround {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-spBtw {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/******************* Text position *********************/
+.align-text {
+  text-align: center;
+}
+
+/******************* Dimension *********************/
+.width-100 {
+  width: 100%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.landing-picture {
+  position: absolute;
+}
+
+/*# sourceMappingURL=styleNew.css.map */

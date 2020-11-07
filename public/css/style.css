@@ -1,10 +1,38 @@
-/*General*/
+:root{
+    --font-logo : 'Sansita Swashed', cursive;
+    --font-text : 'Sanchez', serif;
+    --font-second-h: 'Kanit', sans-serif;
+
+    --background-blue-color : #BBF2FE;
+    --logo-red-color : #F53949;
+    --text-black-color: #2f2e41;
+
+    --font-size-text: 1.2rem;
+
+    /******************* Brake Points *********************/
+    --bp-lg : 1200px;
+    --bp-m : 768px;
+    --bp-s: 576px;
+}
+
+/******************* Flex *********************/
 
 .flex-center{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.flex-left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.flex-vertical-align-center{
+    align-items: center;
 }
 
 .flex-spAround{
@@ -14,18 +42,127 @@
     justify-content: space-around;
 }
 
+
+.flex-spBtw{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/******************* Text *********************/
+
 .align-text{
     text-align: center;
 }
 
+.text-general{
+    font-size: var(--font-size-text);
+    color: var(--text-black-color);
+}
+/******************* Dimension *********************/
+
 .width-100{
     width: 100%;
 }
-
 .width-50{
     width: 50%;
 }
+.width-30{
+    width: 30%;
+}
 
+.margin-all-20px{
+    margin: 20px;
+}
 
-/*Login page*/
+/******************* Non - Dimension *********************/
+.opacity-6{
+    opacity: 0.6;
+}
 
+/******************* General *********************/
+h2{
+    font-family: var(--font-second-h);
+}
+
+a{
+    color: var(--text-black-color);
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--text-black-color);
+}
+
+label{
+    margin: 0;
+}
+
+body{
+    background-color: var(--background-blue-color);
+    font-family: var(--font-text);
+    font-size: var(--font-size-text);
+
+}
+
+main{
+    height: 70vh;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+footer p{
+    font-size: 1rem;
+    color: var(--text-black-color);
+}
+
+/******************* Elements *********************/
+
+.btn-gen{
+    width: 30%;
+    background-color: var(--logo-red-color);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-family: var(--font-second-h);
+}
+
+.logo-style{
+    font-family: var(--font-logo);
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--logo-red-color);
+}
+
+/******************* Landing *********************/
+
+.navigation{
+    margin: 20px 0;
+}
+
+.nav-item{
+    font-size: var(--font-size-text);
+}
+
+.landing-text-wrapper{
+    z-index: 1000;
+}
+
+.landing-picture {
+    position: absolute;
+    bottom: 0;
+}
+
+/******************* Page connexion *********************/
+
+.nav-item-logo-inline{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
