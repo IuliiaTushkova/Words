@@ -14,15 +14,16 @@ use Symfony\Component\Routing\Annotation\Route;
  * @Route("/home")
  *
  */
+
 class TraductionController extends AbstractController
 {
     /*
      * add a word
      */
     /**
-     * @Route("/add/word", "add_word")
+     * @Route("/add/word", name="add_word")
      */
-    public function addWord(Request $request, EntityManagerInterface $entityManager, TraductionRepository $repository)
+    public function index(Request $request, EntityManagerInterface $entityManager, TraductionRepository $repository)
     {
         $traduction = new Traduction();
         $traductionForm = $this->createForm(TraductionType::class, $traduction);

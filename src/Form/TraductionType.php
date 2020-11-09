@@ -15,10 +15,12 @@ class TraductionType extends AbstractType
     {
         $builder
             ->add('wordToTranslate', WordToTranslateType::class, [
-                'label'=>'Le mot à apprendre'
+                'label'=>'Le mot à apprendre',
+                'data_class' => null
             ])
             ->add('wordTranslation', WordTranslationType::class, [
-                'label' => 'Traduction '
+                'label' => 'Traduction ',
+                'data_class' => null
             ])
             ->add('categorie', EntityType::class, [
                 'class' => Categorie::class,

@@ -4,10 +4,15 @@
 
 {% block main %}
     {{ form_start(traductionForm) }}
+    {# word to translate #}
     {{ form_widget(traductionForm.wordToTranslate) }}
+    {# translation #}
     {{ form_widget(traductionForm.wordTranslation) }}
+    {# category choice #}
     {{ form_label(traductionForm.categorie) }}
     {{ form_row(traductionForm.categorie) }}
+    {# to remplace with an icon #}
+    <span><a href="#">Add a new category</a></span>
     {{ form_end(traductionForm) }}
 
 {% endblock %}
